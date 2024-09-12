@@ -1,20 +1,22 @@
 {
   "imports": {
     "site/": "./",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.75.2/",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.48.0/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.99.1/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.3/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
-    "preact": "https://esm.sh/preact@10.19.6",
-    "preact/": "https://esm.sh/preact@10.19.6/",
-    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.4.0",
+    "preact": "npm:preact@10.23.1",
+    "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "std/": "https://deno.land/std@0.190.0/",
     "daisyui": "npm:daisyui@4.4.19",
-    "@deco/htmx": "https://denopkg.com/deco-cx/apps@0.48.0/htmx/mod.ts"
+    "@deco/htmx": "https://denopkg.com/deco-cx/apps@0.59.3/htmx/mod.ts",
+    "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
+    "@deco/deco": "jsr:@deco/deco@^1.99.1",
+    "@deco/durable": "jsr:@deco/durable@^0.5.3"
   },
   "tasks": {
-    "start": "deno task bundle && deno run -A --env --config=deno.json $(deno eval 'console.log(import.meta.resolve(\"deco/hypervisor/main.ts\"))') --build-cmd 'deno task build' -- deno task dev",
+    "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
     "gen": "deno run -A dev.ts --gen-only",
     "play": "USE_LOCAL_STORAGE_ONLY=true deno task start",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
@@ -23,11 +25,12 @@
     "check": "deno fmt && deno lint && deno check dev.ts main.ts",
     "install": "deno eval 'import \"deco/scripts/apps/install.ts\"'",
     "uninstall": "deno eval 'import \"deco/scripts/apps/uninstall.ts\"'",
-    "bundle": "deno eval 'import \"deco/scripts/apps/bundle.ts\"' site",
+    "bundle": "deno run -A jsr:@deco/deco/scripts/bundle site",
     "cache_clean": "rm deno.lock; deno cache -r main.ts",
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
-    "dev": "deno run -A --env --unstable --unstable-hmr dev.ts"
+    "dev": "deno run -A --env --unstable --unstable-hmr dev.ts",
+    "reload": "deno cache -r https://deco.cx/run"
   },
   "githooks": {
     "pre-commit": "check"
@@ -53,5 +56,6 @@
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
     "experimentalDecorators": true
-  }
+  },
+  "lock": false
 }
