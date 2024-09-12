@@ -1,7 +1,7 @@
 {
   "imports": {
     "site/": "./",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.99.1/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.99.2/",
     "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.3/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
     "preact": "npm:preact@10.23.1",
@@ -12,7 +12,7 @@
     "daisyui": "npm:daisyui@4.4.19",
     "@deco/htmx": "https://denopkg.com/deco-cx/apps@0.59.3/htmx/mod.ts",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "@deco/deco": "jsr:@deco/deco@^1.99.1",
+    "@deco/deco": "jsr:@deco/deco@^1.99.2",
     "@deco/durable": "jsr:@deco/durable@^0.5.3"
   },
   "tasks": {
