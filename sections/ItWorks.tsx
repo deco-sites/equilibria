@@ -13,8 +13,8 @@ export default function Section({ name = "It Works!", count = 0 }: Props) {
      * useSection is a nice hook for getting the HTMX link to render this section,
      * but with the following Props
      */
-    const downLink = useSection({ props: { count: count - 1 } });
-    const upLink = useSection({ props: { count: count + 1 } });
+    const downLink = useSection({ props: { count: count - 10 } });
+    const upLink = useSection({ props: { count: count + 10 } });
     return (<div id="it-works" class="container py-10 flex flex-col h-screen w-full items-center justify-center gap-16">
       <div class="leading-10 text-6xl" dangerouslySetInnerHTML={{
             __html: name,
