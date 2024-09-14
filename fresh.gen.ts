@@ -3,14 +3,40 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
-
+import * as $AddButton from "./islands/AddButton.tsx";
+import * as $Card from "./islands/Card.tsx";
+import * as $EndState from "./islands/EndState.tsx";
+import * as $EquilibriumSolver from "./islands/EquilibriumSolver.tsx";
+import * as $InitialState from "./islands/InitialState.tsx";
+import * as $Modal from "./islands/Modal.tsx";
+import * as $ReactionList from "./islands/ReactionList.tsx";
+import * as $ReactionModal from "./islands/ReactionModal.tsx";
+import * as $ReactionViewer from "./islands/ReactionViewer.tsx";
+import * as $SolidList from "./islands/SolidList.tsx";
+import * as $SolidModal from "./islands/SolidModal.tsx";
+import * as $SolutionList from "./islands/SolutionList.tsx";
+import * as $SolutionModal from "./islands/SolutionModal.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
   },
-  islands: {},
+  islands: {
+    "./islands/AddButton.tsx": $AddButton,
+    "./islands/Card.tsx": $Card,
+    "./islands/EndState.tsx": $EndState,
+    "./islands/EquilibriumSolver.tsx": $EquilibriumSolver,
+    "./islands/InitialState.tsx": $InitialState,
+    "./islands/Modal.tsx": $Modal,
+    "./islands/ReactionList.tsx": $ReactionList,
+    "./islands/ReactionModal.tsx": $ReactionModal,
+    "./islands/ReactionViewer.tsx": $ReactionViewer,
+    "./islands/SolidList.tsx": $SolidList,
+    "./islands/SolidModal.tsx": $SolidModal,
+    "./islands/SolutionList.tsx": $SolutionList,
+    "./islands/SolutionModal.tsx": $SolutionModal,
+  },
   baseUrl: import.meta.url,
 } satisfies Manifest;
 

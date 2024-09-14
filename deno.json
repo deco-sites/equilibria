@@ -1,8 +1,8 @@
 {
   "imports": {
     "site/": "./",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.99.2/",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.3/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.100.0/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.8/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
     "preact": "npm:preact@10.23.1",
     "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
@@ -10,9 +10,9 @@
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "std/": "https://deno.land/std@0.190.0/",
     "daisyui": "npm:daisyui@4.4.19",
-    "@deco/htmx": "https://denopkg.com/deco-cx/apps@0.59.3/htmx/mod.ts",
+    "@deco/htmx": "https://denopkg.com/deco-cx/apps@0.59.8/htmx/mod.ts",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "@deco/deco": "jsr:@deco/deco@^1.99.2",
+    "@deco/deco": "jsr:@deco/deco@1.99.3",
     "@deco/durable": "jsr:@deco/durable@^0.5.3"
   },
   "tasks": {

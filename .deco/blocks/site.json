@@ -3,12 +3,11 @@
     "type": "website",
     "jsonLDs": [],
     "noIndexing": false,
-    "description": "Improve your page performance with deco.cx",
-    "titleTemplate": "%s | deco.cx",
-    "descriptionTemplate": "%s | deco.cx",
+    "titleTemplate": "%s",
+    "descriptionTemplate": "%s",
     "title": "Start",
-    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8/40cc7da0-93d3-4215-9c2a-04b2f86b0a47",
-    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8/22c99167-0018-484f-8b0d-4295a7d771f2"
+    "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/equilibria/d901ae7c-fc96-4cfc-a4ce-9fbc9677220f/Icon-of-a-chemistry-test-tube-with-a-purple-liquid-inside-bubbles-coming-off",
+    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/equilibria/f0c0f1c6-5ff1-4ae8-9c9f-0a96bc165ea4/Very-simple-and-basic-icon-of-a-chemistry-test-tube-with-purple-liquid-inside-and-bubbles-coming-out-of-it."
   },
   "global": [
     {
@@ -30,5 +29,14 @@
   "firstByteThresholdMS": true,
   "theme": {
     "__resolveType": "Neutral"
+  },
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    }
+  },
+  "flavor": {
+    "framework": "fresh"
   }
 }

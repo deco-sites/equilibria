@@ -1,0 +1,25 @@
+{
+  "__resolveType": "site/sections/ReactionViewer.tsx",
+  "reaction": {
+    "reagents": [
+      {
+        "state": "solid",
+        "name": "AgCl",
+        "amount": 1
+      }
+    ],
+    "products": [
+      {
+        "state": "solute",
+        "name": "Ag^+",
+        "amount": 1
+      },
+      {
+        "state": "solute",
+        "name": "Cl^-",
+        "amount": 1
+      }
+    ],
+    "constant": 100000000
+  }
+}
