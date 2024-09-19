@@ -48,7 +48,7 @@ export default function EquilibriumSolver() {
         ? (
           <div class="w-screen md:w-96 px-2 my-2">
             <button
-              class="w-full px-5 py-2 bg-blue-600 rounded-lg text-white hover:bg-blue-700 font-medium"
+              class="w-full btn btn-md"
               onClick={() => {
                 const [c, m] = find_equilibrium(
                   solutions.value,
